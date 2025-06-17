@@ -1,8 +1,12 @@
-//import express
-import express from 'express';
+import express from "express";
+import cors from "cors";
+import bodyParser from "body-parser";
 
 //init app
 const app = express();
+app.use(cors());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 //define port
 const port = 3000;
