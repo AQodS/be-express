@@ -1,7 +1,7 @@
 import express from "express";
 import { validationResult } from "express-validator";
 import bcrypt from "bcryptjs";
-import prisma from "../prisma/client";
+import { prisma } from "../prisma/client/index.js";
 
 const register = async (req, res) => {
 
