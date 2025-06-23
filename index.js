@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 import bodyParser from "body-parser";
+import router from "./routes";
 
 //init app
 const app = express();
@@ -15,6 +16,8 @@ const port = 3000;
 app.get('/', (req, res) => {
   res.send('Hello World!');
 });
+
+app.use('/api', router);
 
 //start server
 app.listen(port, () => {
