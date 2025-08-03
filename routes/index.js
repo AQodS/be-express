@@ -9,6 +9,7 @@ import { createUser, findUser, findUserById, updateUser, deleteUser } from "../c
 
 const router = express.Router();
 
+// endpoints
 router.post("/register", validateRegister, register);
 router.post("/login", validateLogin, login);
 router.get("/admin/users", verifyToken, findUser);

@@ -14,7 +14,7 @@ const port = 3000;
 
 //route
 app.get('/', (req, res) => {
-  res.send('Hello World!');
+  res.send('Server is running!');
 });
 
 app.use('/api', router);
