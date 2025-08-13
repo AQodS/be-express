@@ -12,7 +12,7 @@ const findUser = async (req, res) => {
         email: true
       },
       orderBy: {
-        id: "descs"
+        id: "desc"
       }
     });
 
